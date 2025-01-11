@@ -38,15 +38,34 @@ INSERT INTO authors (author_name) VALUES ('Jone Doe');
 SELECT * FROM authors;
 
 --READ : retrieve a specific author by their ID from the authors table
-SELECT * FROM authors WHERE id = 9;
+SELECT * FROM authors WHERE id = 10;
 
 -- UPDATE : update an author’s name in the authors table
-UPDATE authors SET author_name = 'Harry Doeee' WHERE id = 9;
+UPDATE authors SET author_name = 'Harry Doe' WHERE id = 9;
 
 --DELETE : delete an author by their ID from the authors table
-DELETE FROM authors WHERE id = 7;
+DELETE FROM authors WHERE id = 13;
 
 -- authors table query end
 
 
 
+
+-- categories table query start
+
+--CREATE : a new category to the categories table
+INSERT INTO categories (category_name) VALUES ('Programming');
+
+--READ : retrieve all categories from the categories table
+SELECT * FROM categories;
+
+--READ : a specific category by its ID from the categories table
+SELECT * FROM categories WHERE id = 5;
+
+--UPDATE : update a category’s name in the categories table
+UPDATE categories SET category_name = 'Our Category' WHERE id = 1;
+
+--DELETE :delete a category by its ID from the categories table
+DELETE FROM categories WHERE id = 2;
+
+-- categories table query end
